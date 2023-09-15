@@ -49,9 +49,6 @@ if quest == 1:
                 "host": "{radius_ip}",
                 "port": 1812,
                 "secret": "{Secret}",
-                "id": "672725194338841973",
-                "openRoamingCertificateId": null,
-                "caCertificate": null
             }},
         ],
         "radiusAccountingEnabled": false,
