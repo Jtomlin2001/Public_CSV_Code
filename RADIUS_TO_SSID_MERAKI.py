@@ -6,7 +6,6 @@ ssid_name = input("Name of desired SSID: ")
 radius_ip = input("IP Address of Radius Server: ")
 Secret = input("Secret for Authentication: ")
 quest = int(input("Did you set up 1 or 2 Radius servers? "))
-print(quest)
 if quest == 1:
     base_url = 'https://api.meraki.com/api/v1'
     session_params = {
@@ -131,17 +130,11 @@ elif quest == 2:
                 "host": "{radius_ip}",
                 "port": 1812,
                 "secret": "{Secret}",
-                "id": "672725194338841973",
-                "openRoamingCertificateId": null,
-                "caCertificate": null
             }},
             {{
                 "host": "{radius_ip_2}",
                 "port": 1812,
                 "secret": "{Secret}",
-                "id": "672725194338841973",
-                "openRoamingCertificateId": null,
-                "caCertificate": null
             }}
         ],
         "radiusAccountingEnabled": false,
